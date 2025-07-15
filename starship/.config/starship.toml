@@ -7,10 +7,7 @@ add_newline = false
 format = """
 [ $os $username$hostname](bg:#a3aed2 fg:#090c0c)\
 [](bg:#394260 fg:#a3aed2)\
-$nodejs\
-$rust\
-$golang\
-$php\
+[ $nodejs$rust$c$cpp$golang$php](bg:#394260)\
 [](fg:#394260 bg:#a3aed2)\
 [](fg:#a3aed2)\
 $fill\
@@ -20,9 +17,10 @@ $fill\
 $fill\
 [](fg:purple)\
 [$time$cmd_duration ](bg:purple fg:black)\
-\n$directory\
+$line_break\
+$directory\
 [](fg:#769ff0)\
-\n$character"""
+\n[└>](fg:#e3e5e5)$character"""
 
 [username]
 show_always = true
@@ -65,99 +63,131 @@ style = "fg:lavender"
 # symbols
 [aws]
 symbol = "  "
+style = "bg:#394260 fg:green"
 
 [buf]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [bun]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [c]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [cpp]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [cmake]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [conda]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [crystal]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [dart]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [deno]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [docker_context]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [elixir]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [elm]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [fennel]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [fossil_branch]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [gcloud]
 symbol = "  "
+style = "bg:#394260 fg:green"
 
 [git_commit]
 tag_symbol = '  '
+style = "bg:#394260 fg:green"
 
 [golang]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [guix_shell]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [haskell]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [haxe]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [hg_branch]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [java]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [julia]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [kotlin]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [lua]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [memory_usage]
 symbol = "󰍛 "
+style = "bg:#394260 fg:green"
 
 [meson]
 symbol = "󰔷 "
+style = "bg:#394260 fg:green"
 
 [nim]
 symbol = "󰆥 "
+style = "bg:#394260 fg:green"
 
 [nix_shell]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [nodejs]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [ocaml]
 symbol = " "
+style = "bg:#394260 fg:green"
 
 [os]
 disabled = false
