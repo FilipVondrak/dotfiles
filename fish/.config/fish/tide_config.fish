@@ -8,4 +8,7 @@ set -g tide_context_color white
 set -g tide_context_color_root red
 set -g tide_context_color_ssh red
 
-
+# os
+set -g tide_os_bg_color '#0b0b38'
+set -g tide_os_color white
+set -g tide_os_icon " "

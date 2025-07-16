@@ -5,22 +5,17 @@
 add_newline = false
 
 format = """
-[ $os $username$hostname](bg:#a3aed2 fg:#090c0c)\
-[](bg:#394260 fg:#a3aed2)\
-[ $nodejs$rust$c$cpp$golang$php](bg:#394260)\
-[](fg:#394260 bg:#a3aed2)\
-[](fg:#a3aed2)\
-$fill\
-[](fg:red)\
-[$git_status$git_branch](bg:red fg:black)\
-[](fg:red)\
-$fill\
-[](fg:purple)\
-[$time$cmd_duration ](bg:purple fg:black)\
-$line_break\
+[ $os $username$hostname](bg:#7755fe fg:white)\
+[](fg:#7755fe bg:#769ff0)\
 $directory\
 [](fg:#769ff0)\
-\n[└>](fg:#e3e5e5)$character"""
+[ $git_branch $git_status]()\
+\n[└](fg:#7755fe bold)$character
+"""
+
+[custom.foo]
+symbol = "R"
+format = "[$symbol](bg:red blue)"
 
 [username]
 show_always = true
@@ -29,11 +24,15 @@ style_root = "bg:red fg:crust"
 format = '[$user]($style)'
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:black bg:#769ff0"
 format = "[$path]($style)"
 truncation_length = 7
 read_only = " 󰌾"
 truncation_symbol = "…/"
+
+[character]
+success_symbol = '[ \$](bold green)'
+error_symbol = '[ \$](bold red)'
 
 [hostname]
 ssh_only = false
@@ -44,17 +43,18 @@ format = '@(bold)[$ssh_symbol](bold)[$hostname]($style)'
 disabled = false
 
 [git_status]
-style = "bg:red fg:black"
+style = "fg:red"
 
 [git_branch]
 symbol = " "
-style = "bg:red fg:black"
+style = "fg:red"
+format = "[$symbol$branch]($style)"
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:black"
-format = ' $time'
+style = "fg:black bg:purple"
+format = '[  $time]($style)[](fg:purple)'
 
 [fill]
 symbol = '─'
