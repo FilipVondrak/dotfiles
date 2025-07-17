@@ -1,5 +1,9 @@
 theme = tokyonight
 font-family = "MartianMono NFM"
+
+custom-shader = ghostty-shaders/bloom-0.25.glsl
+# custom-shader = ghostty-shaders/cursor_smear_fade.glsl
+
 #font-family = "MesloLGL Nerd Font Propo Regular"
 #lovelace 
 # # This is the configuration file for Ghostty.
