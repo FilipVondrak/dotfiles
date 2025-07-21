@@ -1,12 +1,14 @@
 # Dotfiles
 ## Requirements
 - git
+- nodejs
 - GNU Stow
 - nvim
     - luarocks
     - neovim
     - nerd fonts
     - lazygit
+    - tectonic
 
 ## Usage
 1. clone this repo: `git clone https://github.com/FilipVondrak/dotfiles.git ~/.dotfiles && cd ~/.dotfiles`
