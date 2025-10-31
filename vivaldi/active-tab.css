@@ -1,0 +1,3 @@
+#browser .tab-position .tab.active {background-color: #333541; color: white !important;}
+#browser .tab-position .tab {background-color: #151620}
+#browser .tab-position .tab:hover: {background-color:blue}

@@ -14,6 +14,10 @@ fish_add_path ~/.nix-profile/bin
 fish_add_path ~/.local/share/JetBrains/Toolbox/scripts
 fish_add_path ~/.dotnet/tools
 
+# add snap packages to PATH
+fish_add_path /var/lib/snapd/snap/bin
+fish_add_path ~/.local/bin
+
 # overwrite greeting
 # potentially disabling fastfetch
 function fish_greeting
