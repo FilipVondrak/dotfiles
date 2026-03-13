@@ -18,6 +18,11 @@ fish_add_path ~/.dotnet/tools
 fish_add_path /var/lib/snapd/snap/bin
 fish_add_path ~/.local/bin
 
+# add nix profiles to fish
+if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+    source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+end
+
 # overwrite greeting
 # potentially disabling fastfetch
 function fish_greeting
