@@ -18,6 +18,10 @@ fish_add_path ~/.dotnet/tools
 fish_add_path /var/lib/snapd/snap/bin
 fish_add_path ~/.local/bin
 
+if set -q JETBRAINS_INTELLIJ_COMMAND_END_MARKER
+    # Inject commands from Jetbrains IDEs
+end
+
 # add nix profiles to fish
 if test -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
     source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish

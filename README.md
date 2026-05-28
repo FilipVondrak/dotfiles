@@ -12,6 +12,8 @@
   - lazygit
   - tectonic
   - npm
+- zoxide
+- starship
 
 ## Usage
 
