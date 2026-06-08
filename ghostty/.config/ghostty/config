@@ -1,6 +1,6 @@
 theme = TokyoNight
 font-family = "MartianMono NFM"
-
+shell-integration-features = ssh-terminfo,ssh-env
 # custom-shader = ghostty-shaders/bloom-0.25.glsl
 # custom-shader = ghostty-shaders/cursor_smear_fade.glsl
 
